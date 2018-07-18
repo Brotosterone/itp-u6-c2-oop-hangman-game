@@ -2,7 +2,7 @@ from .exceptions import *
 import random
 
 class GuessAttempt(object):
-    def __init__(self,guess,hit=False,miss=True):
+    def __init__(self,guess,hit=False,miss=False):
         if hit and miss:
             raise InvalidGuessAttempt
         self.guess = guess
